@@ -20,6 +20,9 @@ def transcribe_sequence(sequence):
   pairs = {'A': 'U', 'T':'A', 'C':'G', 'G':'C'}
   transcribed_seq = ''
 
+  if (sequence[0:3] == "ATG"):
+    sequence = get_complement(sequence)
+
   for base in sequence:
     transcribed_seq += pairs[base]
 
