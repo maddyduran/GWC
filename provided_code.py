@@ -122,7 +122,7 @@ def plot_nt_frequencies(orig_seq, sequences):
   fig.set_figheight(3)
   fig.set_figwidth(30)
 
-  ax.set_xticks(list(range(len(sequences))))
+  ax.set_xticks(list(range(len(orig_seq))))
   ax.set_xticklabels(list(orig_seq))
   ax.set_yticks(list(range(len(bases))))
   ax.set_yticklabels(bases)
@@ -189,7 +189,7 @@ def plot_AA_frequencies(orig_protein, protein_sequences):
   fig.set_figheight(10)
   fig.set_figwidth(35)
 
-  ax.set_xticks(list(range(len(formatted_protein_sequences))))
+  ax.set_xticks(list(range(len(orig_protein))))
   ax.set_xticklabels(list(orig_protein))
   ax.set_yticks(list(range(len(AAs))))
   ax.set_yticklabels(AAs)
