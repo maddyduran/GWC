@@ -2,6 +2,7 @@ import random
 import numpy as np
 
 
+# this function returns the complement of an input sequence
 def get_complement(sequence):
   new_sequence = ""
   complement = {"A": "T",
